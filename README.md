@@ -1,4 +1,4 @@
-# MatrixDeployer
+# Matrix_Riot_Jitsi
 Hello! This repository is intended to setup an encrypted Matrix/Riot/Jitsi communication environment.
 
 ## Prerequisites:
