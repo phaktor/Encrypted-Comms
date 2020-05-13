@@ -1,4 +1,4 @@
-# Matrix_Riot_Jitsi
+# Encrypted Comms
 Hello! This repository is intended to setup an encrypted Matrix/Riot/Jitsi communication environment.
 
 ## Prerequisites:
@@ -106,12 +106,14 @@ exit
         - Run the script
         
         - Give the installer a hostname of jitsi.example.com
+        - Use the Generate cert option
 ```
 
-10) To add jitsi to the riot application, edit the config.json at /var/www/riot.example.com/riot/config.json and change the preferredDomain of the jitsi block to your domain.
+10) Run the following command to install letsencrypt: "/usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh" (if Jitsi is not forwarding to https, rerun this command)
 
+11) To add jitsi to the riot application, edit the config.json at /var/www/riot.example.com/riot/config.json and change the preferredDomain of the jitsi block to your domain.
 
-11) Sign in from the Riot app on the server or the mobile client, connecting to the Matrix on the server. You can create a jitsi meeting from the site or through riot.
+12) Sign in from the Riot app on the server or the mobile client, connecting to the Matrix on the server. You can create a jitsi meeting from the site or through riot.
 
 ## Clean Up:
 When finished with the server and wanting to clean up AWS, send the command within terminal: 
